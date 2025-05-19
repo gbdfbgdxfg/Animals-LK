@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> form01 </title>
+</head>
+<body>
+<p><h2> Online Booking System </h2></p>
+
+<form>
+  <p> Name <input type="text" size="25" maxlength="40"> </p>
+  <p> Phone <input type="text" size="25" maxlength="10" placeholder="mobile"> </p>
+  <p> Email <input type="text" size="25" maxlength="40"> </p>
+
+<fieldset>
+  <legend> which Taxi Do You Require? </legend>
+  <p> <input type="radio" name="taxi" value="car" checked> car </p>
+  <p> <input type="radio" name="taxi" value="van"> van </p>
+  <p> <input type="radio" name="taxi" value="tuk tuk"> Tuk Tuk </p>
+</fieldset> <br><br>
+
+<fieldset>
+  <legend> Extras </legend>
+  <p> <input type="checkbox" name="extra01" value="baby"> Baby Steel </p>
+  <p> <input type="checkbox" name="extra02" value="wheel"> Wheel Chair Access </p>
+  <p> <input type="checkbox" name="extra03" value="stock"> Stock Trip </p>
+</fieldset> <br> <br>
+
+Pick Up DATE/TIME <input type="date" size="50"> <br> <br>
+
+Pickup Place 
+   <select>
+       <option value=" " selected> Select One </option>
+       <option value="office"> Taxi Office </option>
+       <option value="town_hall" > Town Hall </option> 
+       <option value="telepathy" > we'll guess! </option> 
+   </select> <br> <br>
+
+Dropoff Place <input type="text" name="place" list="destination">
+        <datalist id="destinations">
+        <option value ="Airport">
+        <option value ="Beach">
+        <option value ="Fred Flinstone's House">
+        </datalist> <br> <br>
+
+Special Instructions
+        <textarea name="comments" cols="30" rows="4" maxlegth="500"></textarea> <br> <br>
+<p> <input type="reset" value="Clear Form"> </p>
+<p> <input type="submit" value="Submit Entry"> </p>
+
+</form>
+</body>
+</html>
